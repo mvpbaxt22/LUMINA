@@ -155,4 +155,7 @@ footer {
         font-size: 40px;
     }
 }
-
+.photo {
+  aspect-ratio: 4 / 3; /* ajusta a tus fotos */
+  background: #111;
+}

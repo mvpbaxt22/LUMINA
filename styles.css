@@ -96,6 +96,9 @@ h2 {
     cursor: pointer;
     filter: grayscale(100%);
     transition: 0.4s;
+
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .photo:hover {
@@ -152,3 +155,4 @@ footer {
         font-size: 40px;
     }
 }
+

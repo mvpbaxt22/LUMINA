@@ -1,7 +1,3 @@
-/* =========================
-   ANIMACIÓN AL SCROLL
-========================= */
-
 document.addEventListener('DOMContentLoaded', () => {
 
   const photos = document.querySelectorAll('.photo');
@@ -27,12 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
   photos.forEach(photo => observer.observe(photo));
 
 });
-
-
-/* =========================
-   FULLSCREEN AL CLICK
-========================= */
-
 document.addEventListener('click', e => {
   const img = e.target;
 
@@ -44,3 +34,4 @@ document.addEventListener('click', e => {
     img.requestFullscreen().catch(() => {});
   }
 });
+

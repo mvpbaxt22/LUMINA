@@ -12,3 +12,6 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.photo').forEach(img => {
   observer.observe(img);
 });
+photo.addEventListener('click', () => {
+  photo.requestFullscreen();
+});

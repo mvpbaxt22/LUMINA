@@ -163,3 +163,36 @@ footer {
   content-visibility: auto;
   contain-intrinsic-size: 300px 200px;
 }
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+section, .content, .text, .info {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+opacity: 0;
+transform: translateY(40px);
+@media (max-width: 768px) {
+
+  h1, h2, h3, p {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    transform: none !important;
+  }
+
+  section {
+    height: auto !important;
+    min-height: unset !important;
+    overflow: visible !important;
+  }
+
+  .hero, .fullscreen, .intro {
+    height: auto !important;
+    padding: 80px 20px;
+  }
+}
